@@ -1,0 +1,70 @@
+import React from "react";
+import { Card, CardContent } from "@/components/ui/card";
+import { Mail, Github, Linkedin } from "lucide-react";
+
+export default function CybersecurityPortfolio() {
+  return (
+    <main className="min-h-screen bg-gray-100 p-6">
+      <section className="max-w-4xl mx-auto text-center">
+        <h1 className="text-4xl font-bold mb-2">Steven Robison</h1>
+        <p className="text-lg text-gray-600 mb-6">
+          Cybersecurity Portfolio — Certified & Passionate Defender of Systems
+        </p>
+
+        <div className="flex justify-center gap-4 mb-10">
+          <a href="mailto:StevenRobison98@Yahoo.com" className="flex items-center gap-1 text-blue-600">
+            <Mail size={18} /> StevenRobison98@Yahoo.com
+          </a>
+          <a href="https://github.com/SaiyanSteve" target="_blank" className="flex items-center gap-1 text-blue-600">
+            <Github size={18} /> GitHub
+          </a>
+          <a
+            href="https://www.linkedin.com/in/steven-robison-5b76a6281"
+            target="_blank"
+            className="flex items-center gap-1 text-blue-600"
+          >
+            <Linkedin size={18} /> LinkedIn
+          </a>
+        </div>
+
+        <Card className="mb-6 shadow-xl">
+          <CardContent className="p-6 text-left">
+            <h2 className="text-2xl font-semibold mb-4">Certifications</h2>
+            <ul className="list-disc list-inside text-gray-700 space-y-2">
+              <li>Microsoft Azure Fundamentals (AZ-900)</li>
+              <li>Microsoft 365 Fundamentals (MS-900)</li>
+              <li>Microsoft Security, Compliance, and Identity (SC-900)</li>
+              <li>Google Cybersecurity Certificate:
+                <ul className="list-disc list-inside ml-6">
+                  <li>Linux System Administration</li>
+                  <li>Python Programming</li>
+                  <li>SQL Databases</li>
+                  <li>Network Security</li>
+                </ul>
+              </li>
+            </ul>
+          </CardContent>
+        </Card>
+
+        <Card className="mb-6 shadow-xl">
+          <CardContent className="p-6 text-left">
+            <h2 className="text-2xl font-semibold mb-4">Tools & Technologies</h2>
+            <p className="text-gray-700">
+              <strong>Languages:</strong> Python, Bash, PowerShell<br />
+              <strong>Tools:</strong> Nmap, Wireshark, Metasploit, Burp Suite, Nessus, Splunk<br />
+              <strong>Frameworks:</strong> MITRE ATT&CK, NIST, OWASP Top 10
+            </p>
+          </CardContent>
+        </Card>
+
+        <a
+          href="https://docs.google.com/document/d/1hB9Rw1Z_bHTgkhnIJysI3mi8WeNiBEyP/edit"
+          target="_blank"
+          className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-xl transition"
+        >
+          View My Resume
+        </a>
+      </section>
+    </main>
+  );
+}
